@@ -29,7 +29,8 @@ def main():
         #Value error exception for smartasses that don't want to enter a number
         while True:
             try:
-                #user input for cost elements
+                #user input for cost elements; input is type cast with a value error exception to force users to
+                #enter a float
                 costs.append(float(input("How much is your expense? $")))
                 break
             except ValueError:
