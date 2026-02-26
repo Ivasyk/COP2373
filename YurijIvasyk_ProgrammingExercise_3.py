@@ -2,6 +2,7 @@
 #ask for the type of expense and the amount. Use the reduce method to analyze the expenses and display the total
 #expense, the highest expense and the lowest expense. Label what the highest and lowest expense is.
 from functools import reduce
+import sys
 
 def main():
     #running two lists parallel because it's easier for the purposes of this assignment
@@ -15,9 +16,13 @@ def main():
     while True:
         try:
             numbof = int(input('How many expenses do you have? '))
+            if numbof < 0:
+                raise ValueError
+            elif numbof == 0:
+                sys.exit('you have no expenses, good for you.')
             break
         except ValueError:
-            print('Please enter an integer.')
+            print('Please enter a positive integer.')
     while numbof > 0:
         #user input for the description for each expense ie. corresponding element from name list to cost list
         names.append(input('what type of expense do you have? '))
