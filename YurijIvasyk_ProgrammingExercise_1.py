@@ -3,7 +3,7 @@
 
 def main():
     #initialized accumulators
-    tickets = 20
+    tickets = 10
     customers = 0
 
     #while loop takes orders until there are no tickets left
