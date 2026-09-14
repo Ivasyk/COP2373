@@ -4,7 +4,7 @@
 def main():
     #initialized accumulators
     tickets = 10
-    customers = 0
+    fools = 0
 
     #while loop takes orders until there are no tickets left
     while True:
@@ -26,14 +26,14 @@ def main():
             print('Please place an order of at least 1 ticket')
         else:
             tickets = tickets - order
-            customers += 1
+            fools += 1
             print('There are', tickets, 'tickets remaining')
             False
 
         #terminates function after reaching desired outcome
         if tickets == 0:
             #output required by coding overlords, also terminates function
-            return customers
+            return fools
 
 #second function required by coding overlords, only serves the purpose of printing output from main function
 def returnvalues(main):
