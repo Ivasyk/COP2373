@@ -11,7 +11,7 @@ def main():
         #nested while loop used to force user to input valid data for order variable to stop code from breaking
         while True:
             try:
-                order = int(input('We have ' + str(tickets) + ' tickets available with a limit of 4 per person. How many tickets would you like to buy?'))
+                order = int(input('We have ' + str(tickets) + ' tickets available with a limit of 4 per person. How many tickets you wanna buy fool?'))
             except ValueError:
                 print('Please enter a number')
             else:
