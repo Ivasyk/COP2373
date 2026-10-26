@@ -20,7 +20,7 @@ def patchck(s):
     #initialized counter
     count = 0
 
-    #loop recursively checks all elements in the m pattern of the user input while also counting
+    #loop recursively prints all elements in the m pattern of the user input while also counting
     for i in m:
         count +=1
         print('->', i)
